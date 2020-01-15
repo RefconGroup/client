@@ -34,19 +34,6 @@ export const RefconNav = (props) => {
             <NavItem>
               <NavLink href="/services">All Services</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Services
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Refrigeration
-                </DropdownItem>
-                <DropdownItem>
-                  Air Conditioning
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
           </Nav>
         </Collapse>
       </Navbar>
