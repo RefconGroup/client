@@ -22,7 +22,7 @@ export const RefconNav = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
           <NavItem>
-              <NavLink href="/">Contact Us</NavLink>
+              <NavLink href="/contact">Contact Us</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/about">About Us</NavLink>
