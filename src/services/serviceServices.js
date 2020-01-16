@@ -1,3 +1,5 @@
+import api from "../config/api"
+
 export const getAllServices = async () => {
     try {
         const response = await api.get("/")
