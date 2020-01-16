@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
