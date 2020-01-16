@@ -6,20 +6,26 @@ import Contact from "./Contact";
 import { RefconNav } from './Nav';
 import RefconCarousell from './Carousell';
 
+
+const divStyle = {
+  marginLeft: 30,
+  marginRight: 30,
+}
+
 function App(){
 return(
-<div>
   <BrowserRouter>
     <RefconNav />
       <Switch>
         <Route exact path="/" component={RefconCarousell} />
-        <Route exact  path="/services" component={Services} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/about" component={About} />
+        <div style={divStyle}>
+          <Route exact  path="/services" component={Services} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/about" component={About} />
+        </div>
       </Switch>
   </BrowserRouter>
-</div>
-)
+ )
 }
 
 export default App;
