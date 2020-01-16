@@ -27,12 +27,8 @@ return(
   <BrowserRouter>
     <RefconNav />
       <Switch>
-<<<<<<< HEAD
-        <Route exact path="/" component={RefconCarousell} />
+      <Route exact path="/" component={Home} />
         <div>
-=======
-        <Route exact path="/" component={Home} />
->>>>>>> 6ba7296888599a522440d58dd79df7a3732e5f56
         <Route exact  path="/services" render={() => <Services services={services}/>}  /> 
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/about" component={About} />
