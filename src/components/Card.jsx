@@ -8,7 +8,7 @@ export const RefconCard = (props) => {
   return (
     <div>
       <Card>
-        <CardImg top width="100%" src="https://workiz.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-13-at-21.36.23.png" alt="Card image cap" />
+        <CardImg top width="100%" height="300vh" src="https://workiz.com/wp-content/uploads/2019/11/Screen-Shot-2019-11-13-at-21.36.23.png" alt="Card image cap" />
         <CardBody>
           <CardTitle>Why us?</CardTitle>
           <CardSubtitle>We are a very COOL company aha</CardSubtitle>
