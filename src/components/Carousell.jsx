@@ -9,9 +9,9 @@ import {
 
 const items = [
   {
-    src: 'https://www.memesmonkey.com/images/memesmonkey/23/23b170bd094892e186ada3ea8f88c6b2.jpeg',
+    src: 'https://image.shutterstock.com/z/stock-photo-young-woman-switching-on-air-conditioner-while-sitting-on-sofa-at-home-1069914146.jpg',
     altText: 'Slide 1',
-    caption: 'Bottom Text',
+    caption: 'Enjoy the perect temperature for your home.',
     width: '100%',
     height: '500vh'
   },

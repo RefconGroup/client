@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Fade } from 'reactstrap';
 
-const Services = props => {
-  const { services } = props
+import { ServiceCard } from './Card'
 
+export const Services = props => {
+  const { services } = props
   const [fadeIn] = useState(true);
+
   return(
     <div>
       <Fade in={fadeIn}>
         <h3>Our Services</h3>
-          {services[0] ? services.map( service => <p>{service.name}</p>) : null}    
+          {services[0] ? services.map( (service,i) => <ServiceCard  services={services}/>) : null}  
       </Fade>
     </div>
   );

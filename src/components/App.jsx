@@ -28,7 +28,7 @@ return(
       <Switch>
         <Route exact path="/" component={Home} />
           <div>
-          <Route exact  path="/services" render={() => <Services services={services}/>}  /> 
+          <Route exact path="/services" render={() => <Services services={services}/>}  /> 
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
           </div>
