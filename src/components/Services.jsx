@@ -11,7 +11,7 @@ export const Services = props => {
     <div>
       <Fade in={fadeIn}>
         <h3>Our Services</h3>
-          {services[0] ? services.map( (service,i) => <ServiceCard  services={services}/>) : null}  
+          {services[0] ? services.map( (service,i) => <ServiceCard key={i} service={service}/>) : null}  
       </Fade>
     </div>
   );
