@@ -96,7 +96,6 @@ We offer regular and general maintenance and repair work on most common makes an
       </div>
     );
   };
-
   
 
 export default Card;

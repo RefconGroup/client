@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Fade } from 'reactstrap';
 
-import { ServiceCard } from './Card'
+import ServiceCard from './Service'
 
 export const Services = props => {
   const { services } = props
