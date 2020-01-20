@@ -9,23 +9,23 @@ import {
 
 const items = [
   {
-    src: 'https://image.shutterstock.com/z/stock-photo-young-woman-switching-on-air-conditioner-while-sitting-on-sofa-at-home-1069914146.jpg',
+    src: 'https://www.daikin.com.au/sites/default/files/Humidification%20Blog.png   ',
     altText: 'Slide 1',
-    caption: 'Enjoy the perect temperature for your home.',
+    caption: 'Enjoy the perfect temperature for your home.',
     width: '100%',
     height: '500vh'
   },
   {
-    src: 'https://i.redd.it/f9pbkx4uxb541.jpg',
-    altText: 'Laugh',
-    caption: 'Laugh',
+    src: 'https://www.climatastic.com/wp-content/uploads/2018/10/air-con-unit.jpg',
+    altText: 'Stock image 2',
+    caption: 'ahah i love this cold!',
     width: '100%',
     height: '500vh'
   },
   {
-    src: 'https://memeguy.com/photos/images/my-wife-was-feeling-cold-with-the-airconditioner-on-86240.jpg',
+    src: 'https://www.hhaircon.com.au/wp-content/uploads/2014/11/shutterstock_156704747.jpg',
     altText: 'Yes',
-    caption: 'OK SURE THING BRO',
+    caption: 'Keepin it cool since 2014',
     width: "100%",
     height: '500vh'
   }
