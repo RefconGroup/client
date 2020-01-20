@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Fade } from 'reactstrap';
+import { AboutCard } from './Card'
 
 const About = (props) => {
 
@@ -7,8 +8,7 @@ const About = (props) => {
   return(
     <div>
       <Fade in={fadeIn}>
-        <h3>About Us</h3>
-          <p>Lorem Ipsum Dolor Sit Amet</p>
+        <AboutCard/>
       </Fade>
     </div>
   );
