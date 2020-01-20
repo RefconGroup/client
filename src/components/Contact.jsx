@@ -9,9 +9,8 @@ const Contact = (props) => {
     <div>
       <Fade in={fadeIn}>
         <h3>Contact Us</h3>
-          <p>Lorem Ipsum Dolor Sit Amet</p>
+      <Quote/>
       </Fade>
-      <Quote />
     </div>
   );
 }
