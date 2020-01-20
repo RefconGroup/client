@@ -1,10 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, CardFooter } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { RefconCarousell } from './Carousell';
 import { RefconCard, RefconCard2, RefconCard3 } from './Card';
-import { FooterTable } from './Table';
 import {Quote, divStyle} from "./Quote"
-
 
 
 function Home() {
@@ -22,15 +20,6 @@ function Home() {
             </Row>
             </div>
         </Container>
-        <CardFooter>
-            <Container>
-                <Row>
-                    <Col></Col>
-                    <Col><FooterTable/></Col>
-                    <Col></Col>
-                </Row>
-            </Container>
-        </CardFooter>
         </div>
     )
 }
