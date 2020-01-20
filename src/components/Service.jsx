@@ -9,7 +9,7 @@ import { Card,
 
 export const ServiceCard = (props) => {
     const { service } = props
-    {console.log(`Service card got ${service.name}`)}  
+    // {console.log(`Service card got ${service.name}`)}  
     return (
       <div>
         <Card>

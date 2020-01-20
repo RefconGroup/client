@@ -81,7 +81,7 @@ We offer regular and general maintenance and repair work on most common makes an
 
   export const ServiceCard = (props) => {
     const { service } = props
-    {console.log(`Service card got ${service}`)}  
+    // {console.log(`Service card got ${service}`)}  
     return (
       <div>
         <Card>
