@@ -4,7 +4,6 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 
-import { Services } from './Services'
 
 export const RefconCard = (props) => {
   return (
@@ -53,25 +52,6 @@ export const RefconCard2 = (props) => {
       </div>
     );
   };
-
-  export const ServiceCard = (props) => {
-    const { service } = props
-    {console.log(`Service card got ${service}`)}  
-    return (
-      <div>
-        <Card>
-          <CardImg top width="100%" height="300vh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-8h6dXDypByKfrEkNo1fVGCgJHsbufXqFweayqaKT1-aT7Nlrw&s" alt="Card image cap" />
-          <CardBody>
-            <CardTitle>{service.name}</CardTitle>
-            <CardSubtitle>{service.name}</CardSubtitle>
-            <CardText>{service.name}</CardText>
-            <Button><p>Find Out More</p></Button>
-          </CardBody>
-        </Card>
-      </div>
-    );
-  };
-
   
 
 export default Card;
