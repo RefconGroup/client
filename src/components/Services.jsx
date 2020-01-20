@@ -9,7 +9,7 @@ const Services = props => {
     <div>
       <Fade in={fadeIn}>
         <h3>Our Services</h3>
-          {services[0] ? services.map( service => <p>{service.name}</p>) : null};    
+          {services[0] ? services.map( service => <p>{service.name}</p>) : null}    
       </Fade>
     </div>
   );

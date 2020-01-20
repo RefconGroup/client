@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
@@ -27,12 +26,12 @@ return(
   <BrowserRouter>
     <RefconNav />
       <Switch>
-      <Route exact path="/" component={Home} />
-        <div>
-        <Route exact  path="/services" render={() => <Services services={services}/>}  /> 
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/about" component={About} />
-        </div>
+        <Route exact path="/" component={Home} />
+          <div>
+            <Route exact  path="/services" render={() => <Services services={services}/>}  /> 
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/about" component={About} />
+          </div>
       </Switch>
   </BrowserRouter>
  )
