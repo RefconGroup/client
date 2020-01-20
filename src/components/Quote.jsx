@@ -1,45 +1,49 @@
 import React from 'react';
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 const Quote = (props) => {
   return (
-    <div>
-      <InputGroup>
-        <InputGroupAddon addonType="prepend">
-          <InputGroupText>@</InputGroupText>
-        </InputGroupAddon>
-        <Input placeholder="username" />
-      </InputGroup>
-      <br />
-      <InputGroup>
-        <InputGroupAddon addonType="prepend">
-          <InputGroupText>
-            <Input addon type="checkbox" aria-label="Checkbox for following text input" />
-          </InputGroupText>
-        </InputGroupAddon>
-        <Input placeholder="Check it out" />
-      </InputGroup>
-      <br />
-      <InputGroup>
-        <Input placeholder="username" />
-        <InputGroupAddon addonType="append">
-          <InputGroupText>@example.com</InputGroupText>
-        </InputGroupAddon>
-      </InputGroup>
-      <br />
-      <InputGroup>
-        <InputGroupAddon addonType="prepend">
-          <InputGroupText>$</InputGroupText>
-          <InputGroupText>$</InputGroupText>
-        </InputGroupAddon>
-        <Input placeholder="Dolla dolla billz yo!" />
-        <InputGroupAddon addonType="append">
-          <InputGroupText>$</InputGroupText>
-          <InputGroupText>$</InputGroupText>
-        </InputGroupAddon>
-      </InputGroup>
+    <div style={divStyle}>
+    <Form>
+      <FormGroup>
+        <Input
+          type="email"
+          name="email"
+          id="userEmail"
+          placeholder="E-Mail"
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input
+          type="string"
+          name="number"
+          id="phNumber"
+          placeholder="Phone Number"
+        />
+      </FormGroup>
+      <FormGroup>
+        <Input type="select" name="select" id="selector">
+          <option>choose a service...</option>
+          <option>Air-Conditioning</option>
+          <option>Refrigeration</option>
+        </Input>
+      </FormGroup>
+      <FormGroup>
+        <Input type="textarea"
+        name="text"
+        id="textField"
+        placeholder="Provide a brief description of what you would like installed and the size of the space"
+        />
+      </FormGroup>
+    </Form>
     </div>
   );
+}
+
+const divStyle = {
+  marginRight: 0,
+  marginLeft: 50,
+  marginTop: 30,
 };
 
 export default Quote;
