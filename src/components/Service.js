@@ -1,13 +1,15 @@
 import React from 'react';
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, Button
-} from 'reactstrap';
+import { Card, 
+         CardImg, 
+         CardText, 
+         CardBody,
+         CardTitle, 
+         Button } from 'reactstrap';
 
 
 export const ServiceCard = (props) => {
     const { service } = props
-    {console.log(`Service card got ${service}`)}  
+    {console.log(`Service card got ${service.name}`)}  
     return (
       <div>
         <Card>
