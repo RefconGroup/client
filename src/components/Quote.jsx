@@ -1,11 +1,13 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Input, Container, Label } from 'reactstrap';
 
-const Quote = (props) => {
+export const Quote = (props) => {
   return (
-    <div style={divStyle}>
+    <div>
     <Form>
+    <Container fluid="xl" style={{backgroundColor: "#AFFFF0"}}>
       <FormGroup>
+      <Label for="userEmail">GET A QUOTE TODAY!</Label>
         <Input
           type="email"
           name="email"
@@ -29,21 +31,26 @@ const Quote = (props) => {
         </Input>
       </FormGroup>
       <FormGroup>
-        <Input type="textarea"
+        <Input 
+        type="textarea"
         name="text"
         id="textField"
         placeholder="Provide a brief description of what you would like installed and the size of the space"
         />
+        <Label />
       </FormGroup>
+
+      </Container>
     </Form>
     </div>
   );
 }
 
-const divStyle = {
-  marginRight: 0,
-  marginLeft: 50,
-  marginTop: 30,
-};
+export const divStyle = {
+    paddingTop: 80,
+    marginBottom: -375,
+    marginRight: 0,
+    marginLeft: 1150
+}
 
-export default Quote;
+export default {divStyle, Quote};

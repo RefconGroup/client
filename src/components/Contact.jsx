@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Fade } from 'reactstrap';
+import { Quote } from "./Quote"
 
 const Contact = (props) => {
 
@@ -10,6 +11,7 @@ const Contact = (props) => {
         <h3>Contact Us</h3>
           <p>Lorem Ipsum Dolor Sit Amet</p>
       </Fade>
+      <Quote />
     </div>
   );
 }
