@@ -47,10 +47,9 @@ export const Quote = (props) => {
 }
 
 export const divStyle = {
-    paddingTop: 80,
-    marginBottom: -375,
     marginRight: 0,
-    marginLeft: 1150
+    paddingTop: 70,
+    marginBottom: -372,
 }
 
 export default {divStyle, Quote};
