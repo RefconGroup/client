@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Home from "./Home"
 import { RefconNav } from './Nav';
 import { getAllServices } from '../services/serviceServices'
+import { Footer } from './Footer'
 
 function App(){
 
@@ -33,6 +34,7 @@ return(
           <Route exact path="/about" component={About} />
           </div>
       </Switch>
+      <Footer/>
   </BrowserRouter>
  )
 }
