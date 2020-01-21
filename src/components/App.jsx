@@ -4,6 +4,7 @@ import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
 import Home from "./Home"
+import Admin from "./Admin"
 import { RefconNav } from './Nav';
 import { getAllServices } from '../services/serviceServices'
 import { Footer } from './Footer'
@@ -32,6 +33,7 @@ return(
           <Route exact path="/services" render={() => <Services services={services}/>}  /> 
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/admin" render={() => <Admin services={services}/>}  />
           </div>
       </Switch>
       <Footer/>
