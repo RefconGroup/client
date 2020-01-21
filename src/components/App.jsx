@@ -26,6 +26,7 @@ function App(){
 		// call to server to add blog post
 		addService(service).then((response) => {			
       const NewService = response
+      console.log(NewService)
       props.history.push(`/services`)
 		}).catch((error) => {				
 			console.log(`An error occurred adding the service: ${error}`)
@@ -41,7 +42,7 @@ function App(){
     })
     console.log(services)
     return () => {}
-  },[])
+  },)
 
 
 return(
