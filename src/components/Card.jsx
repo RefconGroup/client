@@ -79,6 +79,4 @@ We offer regular and general maintenance and repair work on most common makes an
     );
   };
 
-  
-
 export default Card;

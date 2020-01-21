@@ -1,5 +1,6 @@
 import React from 'react';
-import { Table } from 'reactstrap';
+import { Table, Button, ButtonGroup} from 'reactstrap';
+
 
 export const FooterTable = (props) => {
     return (
@@ -15,6 +16,35 @@ export const FooterTable = (props) => {
             <th scope="row"></th>
             <td>Email</td>
             <td>epicgames@gmail.com</td>
+          </tr>
+        </tbody>
+      </Table>
+    );
+  }
+
+  export const AdminTable = (props) => {
+
+        const { service } = props
+    
+    return (
+      <Table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Brief</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+    <th scope="row">{service.name}</th>
+            <td>{service.brief}</td>
+            <td>
+                <ButtonGroup>
+                <Button><p>EDIT</p></Button>
+                <Button><p>DELETE</p></Button>
+                </ButtonGroup>
+            </td>
           </tr>
         </tbody>
       </Table>

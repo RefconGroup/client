@@ -1,17 +1,38 @@
 import React, { useState, useEffect} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import About from "./About";
-import Services from "./Services";
-import Contact from "./Contact";
-import Home from "./Home"
+
+import About from './About';
+import Services from './Services';
+import Contact from './Contact';
+import Home from './Home';
+import Admin from './Admin';
+import NewService from './NewService';
 import { RefconNav } from './Nav';
-import { getAllServices } from '../services/serviceServices'
-import { Footer } from './Footer'
+import { getAllServices, addService } from '../services/serviceServices';
+import { Footer } from './Footer';
 
 function App(){
 
   let [services, setServices] = useState([])
 
+  function addNewService(event, props) {
+		event.preventDefault()
+		const form = event.target
+		const service = {
+			name: form.name.value,
+			brief: form.brief.value,
+			description: form.description.value
+		}
+		// call to server to add blog post
+		addService(service).then((response) => {			
+      const NewService = response
+      props.history.push(`/services`)
+		}).catch((error) => {				
+			console.log(`An error occurred adding the service: ${error}`)
+			
+		})
+  }
+  
   useEffect( () => {
     getAllServices()
     .then(res => setServices(res))
@@ -30,8 +51,10 @@ return(
         <Route exact path="/" component={Home} />
           <div>
           <Route exact path="/services" render={() => <Services services={services}/>}  /> 
+          <Route exact path="/services/new" render={(props) => <NewService {...props} addNewService={addNewService} />} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/admin" render={() => <Admin services={services}/>}  />
           </div>
       </Switch>
       <Footer/>
