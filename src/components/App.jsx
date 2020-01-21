@@ -51,7 +51,7 @@ return(
         <Route exact path="/" component={Home} />
           <div>
           <Route exact path="/services" render={() => <Services services={services}/>}  /> 
-          <Route exact path="/services/new" render={(props) => <NewService {...props} addNewService={addNewService} />} />
+          <Route exact path="/admin/new" render={(props) => <NewService {...props} addNewService={addNewService} />} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/about" component={About} />
           <Route exact path="/admin" render={() => <Admin services={services}/>}  />
