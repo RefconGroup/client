@@ -9,7 +9,7 @@ import api from "../config/api"
 // Returns all Services
 export const getAllServices = async () => {
     try {
-        const response = await api.get("/")
+        const response = await api.get("/services")
         return response.data
     } catch (error) {
         console.log("got an error from the server fetching services", error)
@@ -17,21 +17,21 @@ export const getAllServices = async () => {
     }  
   }
 
-// Adds a new blog post to the database
+// Adds a new Service to the database
 export const addService = async (serviceInfo) => {
-    // call to server to add new post
-    // will return the new post
-    const newService = {
+    // Call to server to add new service
+    // Will return the new service
+    const NewService = {
         name: serviceInfo.name,
         brief: serviceInfo.brief,
-        description: serviceInfo.description
+        description: serviceInfo.description,
     };
     try {
-        const response = await api.post("/services", newService)
+        const response = await api.post("/services", NewService)
         return response.data
     }
     catch (error) {
-        console.log("Error adding a Service:", error)
+        console.log("Error adding service:", error)
         throw(error)
     }
 }

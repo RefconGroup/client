@@ -13,7 +13,7 @@ export const ServiceCard = (props) => {
     return (
       <div>
         <Card>
-          <CardImg top width="80vw" height="200vh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-8h6dXDypByKfrEkNo1fVGCgJHsbufXqFweayqaKT1-aT7Nlrw&s" alt="Card image cap" />
+          <CardImg top width="80vw" height="200vh" src="http://refcon.com.au/images/asc_logo.png" />
           <CardBody>
             <CardTitle>{service.name}</CardTitle>
             {/* <CardSubtitle>{service.description}</CardSubtitle> */}
