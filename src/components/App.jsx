@@ -20,7 +20,7 @@ function App(){
     })
     console.log(services)
     return () => {}
-  },[])
+  },)
 
 
 return(

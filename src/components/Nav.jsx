@@ -15,7 +15,7 @@ export const RefconNav = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="sticky-top">
+    <div>
       <Navbar color="light" light expand="md">
         <NavbarBrand href="/">Refcon Group Refrigeration</NavbarBrand>
         <NavbarToggler onClick={toggle} />

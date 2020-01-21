@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Fade } from 'reactstrap';
-import { Quote } from "./Quote"
+import Quote from "./Quote"
 
 const Contact = (props) => {
 
