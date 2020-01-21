@@ -4,9 +4,6 @@ import { Card,
          CardText, 
          CardBody,
          CardTitle,
-         Row,
-         Col,
-         Container, 
          Button } from 'reactstrap';
 
 
