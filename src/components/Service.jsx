@@ -1,27 +1,18 @@
-import React from 'react';
-import { Card, 
-         CardImg, 
-         CardText, 
-         CardBody,
-         CardTitle, 
-         Button } from 'reactstrap';
+import React from "react"
+import InfoCard from "./InfoCard"
 
 
-export const ServiceCard = (props) => {
-    const { service } = props
-    // {console.log(`Service card got ${service.name}`)}  
-    return (
-      <div>
-        <Card>
-          <CardImg top width="80vw" height="200vh" src="http://refcon.com.au/images/asc_logo.png" />
-          <CardBody>
-            <CardTitle>{service.name}</CardTitle>
-            {/* <CardSubtitle>{service.description}</CardSubtitle> */}
-            <CardText>{service.brief}</CardText>
-            <Button><p>GET A QUOTE TODAY!!!</p></Button>
-          </CardBody>
-        </Card>
-      </div>
+export const ServiceCard = ({service}) => {
+
+  return (
+      <InfoCard
+        img="http://refcon.com.au/images/asc_logo.png" 
+        cap="Card image cap" 
+        title={service.name}
+        subtitle={service.description}
+        body={service.brief}
+        button="GET A QUOTE TODAY!!!"
+         />
     );
   };
 
