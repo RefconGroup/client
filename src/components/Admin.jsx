@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Fade, Container, Row, Col, CardText, CardBody, Card, Button } from 'reactstrap'
+import { Fade, Container, Row, Col, CardBody, Card, Button } from 'reactstrap'
 import { AdminTable } from './Table'
 
 const AdminPage = props => {
