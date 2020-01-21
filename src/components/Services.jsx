@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Fade, Container, Row, Col } from 'reactstrap';
+import { Fade, Container, Row } from 'reactstrap';
 
 import ServiceCard from './Service'
 
@@ -11,9 +11,9 @@ export const Services = props => {
     <div>
       <Fade in={fadeIn}>
         <h3>Our Services</h3>
-        <Container>
+        <Container fluid>
           <Row>
-          {services[0] ? services.map( (service,i) => <Col   xs="6"><ServiceCard key={i} service={service}/></Col>) : null}  
+          {services[0] ? services.map( (service,i) => <div class="col-md-6" style={{padding: 15}}><ServiceCard key={i} service={service}/></div>) : null}  
           </Row>
         </Container>
       </Fade>
