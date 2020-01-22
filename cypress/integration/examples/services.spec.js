@@ -2,17 +2,7 @@ let fixtures = {}
 beforeEach(() => {
 	cy.viewport(1024, 768)
 	cy.visit("/admin")
-	// Start tests from home page
-	// cy.fixture("registeredUser.json").then(user => {
-	// 	cy.get("[data-cy=login]").click()
-	// 	cy.get("[name=username]").type(user.username)
-	// 	cy.get("[name=password]").type(user.password)
-	// 	cy.get("[type=submit").click()
-	// 	fixtures.registeredUser = user
-	// })
-	// cy.fixture("editBlogPost.json").then(post => {
-	// 	fixtures.editedPost = post
-	// })
+	// Start tests from admin page
 	cy.fixture("newService.json").then(service => {
 		fixtures.newService = service
 		// If the test post already exists, delete it
