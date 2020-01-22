@@ -1,11 +1,5 @@
 import api from "../config/api"
 
-
-//   // Returns a single blog post with the specified id
-// export const getService = (services, id) => {
-//     return services.filter(service => service._id === id)
-// }
-
 // Returns all Services
 export const getAllServices = async () => {
     try {
