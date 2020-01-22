@@ -46,7 +46,7 @@ function App(){
 
 
 return(
-  <BrowserRouter basename="/">
+  <BrowserRouter >
     <RefconNav />
       <Switch>
         <Route exact path="/" component={Home} />
