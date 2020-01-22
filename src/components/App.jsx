@@ -42,7 +42,7 @@ function App(){
     })
     console.log(services)
     return () => {}
-  },)
+  },[services])
 
 
 return(
