@@ -13,7 +13,12 @@ export const Services = props => {
         <h3>Our Services</h3>
         <Container fluid>
           <Row>
-          {services[0] ? services.map( (service,i) => <div className="col-md-6" style={{padding: 15}}><ServiceCard key={i} service={service}/></div>) : null}  
+            {services[0] ? services.map( 
+              (service, index) =>
+                <div className="col-md-6" style={{padding: 15}} key={index} >
+                  <ServiceCard service={service} />
+                </div>
+              ) : null}  
           </Row>
         </Container>
       </Fade>

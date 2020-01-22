@@ -17,9 +17,14 @@ const AdminPage = props => {
             </Card>
         <h3 style={{paddingLeft: 15}}>Our Services</h3>
         <Container>
-          <Row>
-          {services[0] ? services.map( (service,i) => <div className="col-md-6" style={{padding: 15}}><AdminTable key={i} service={service}/></div>) : null}  
-          </Row>
+            <Row>
+            {services[0] ? services.map(
+                (service,i) =>
+                    <div className="col-md-6" style={{padding: 15}} key={i}>
+                        <AdminTable service={service}/>
+                    </div>
+                ) : null}  
+            </Row>
         </Container>
       </Fade>
     </div>
