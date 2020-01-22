@@ -13,29 +13,12 @@ export const Services = props => {
         <h3>Our Services</h3>
         <Container fluid>
           <Row>
-          {services[0] ? services.map( (service,i) => <div class="col-md-6" style={{padding: 15}}><ServiceCard key={i} service={service}/></div>) : null}  
+          {services[0] ? services.map( (service,i) => <div className="col-md-6" style={{padding: 15}}><ServiceCard key={i} service={service}/></div>) : null}  
           </Row>
         </Container>
       </Fade>
     </div>
   );
 }
-
-// export default About;
-
-
-// const Services = props => {
-//   const { services } = props
-  
-//   // Checks that services are being sent by the server
-//   console.log("services in services component", services)  
-
-  
-//   return (
-//     <div>
-
-//     </div>
-//   ) 
-// };
 
 export default Services;

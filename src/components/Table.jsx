@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table, Button, ButtonGroup} from 'reactstrap';
+import {removeService} from '../services/serviceServices';
 
 
 export const FooterTable = (props) => {
@@ -24,8 +25,14 @@ export const FooterTable = (props) => {
 
   export const AdminTable = (props) => {
 
-        const { service } = props
-    
+    const { service} = props
+
+        function deleteService(id) {
+          // Delete the service on the server
+          removeService(id).catch((error) => {
+            console.log(`An error occurred deleting the service: ${error}`)
+          })};
+
     return (
       <Table>
         <thead>
@@ -40,15 +47,12 @@ export const FooterTable = (props) => {
     <th scope="row">{service.name}</th>
             <td>{service.brief}</td>
             <td>
-                <ButtonGroup>
-                <Button><p>EDIT</p></Button>
-                <Button><p>DELETE</p></Button>
-                </ButtonGroup>
+                <Button  onClick={() => deleteService(service._id)}><p>DELETE</p></Button>
             </td>
           </tr>
         </tbody>
       </Table>
     );
   }
-  
+
   export default Table;

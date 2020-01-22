@@ -42,11 +42,11 @@ function App(){
     })
     console.log(services)
     return () => {}
-  },)
+  },[services])
 
 
 return(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <RefconNav />
       <Switch>
         <Route exact path="/" component={Home} />
