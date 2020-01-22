@@ -40,13 +40,12 @@ function App(){
     .catch((error) => {
       console.log(`Oops theres something wrong with this request. The error we got is : ${error}`)
     })
-    console.log(services)
     return () => {}
-  },[services])
+  },[])
 
 
 return(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="/">
     <RefconNav />
       <Switch>
         <Route exact path="/" component={Home} />
