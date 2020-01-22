@@ -12,6 +12,7 @@ export const ServiceCard = ({service}) => {
         subtitle=""
         body={service.brief}
         button="GET A QUOTE TODAY!!!"
+        link={"/contact"}
          />
     );
   };
