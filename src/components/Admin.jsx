@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Fade, Container, Row, Col, CardBody, Card, Button } from 'reactstrap'
+import { Fade, Container, Row, CardBody, Card, Button } from 'reactstrap'
 import { AdminTable } from './Table'
 
 const AdminPage = props => {
@@ -15,10 +15,10 @@ const AdminPage = props => {
                     <Button>Create a new Service</Button>
                 </CardBody>
             </Card>
-        <h3>Our Services</h3>
+        <h3 style={{paddingLeft: 15}}>Our Services</h3>
         <Container>
           <Row>
-          {services[0] ? services.map( (service,ind) => <Col xs="6"><AdminTable key={ind} service={service}/></Col>) : null}  
+          {services[0] ? services.map( (service,i) => <div className="col-md-6" style={{padding: 15}}><AdminTable key={i} service={service}/></div>) : null}  
           </Row>
         </Container>
       </Fade>
