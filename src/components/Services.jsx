@@ -21,21 +21,4 @@ export const Services = props => {
   );
 }
 
-// export default About;
-
-
-// const Services = props => {
-//   const { services } = props
-  
-//   // Checks that services are being sent by the server
-//   console.log("services in services component", services)  
-
-  
-//   return (
-//     <div>
-
-//     </div>
-//   ) 
-// };
-
 export default Services;

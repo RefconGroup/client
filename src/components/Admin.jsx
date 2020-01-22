@@ -18,7 +18,7 @@ const AdminPage = props => {
         <h3>Our Services</h3>
         <Container>
           <Row>
-          {services[0] ? services.map( (service,i) => <Col   xs="6"><AdminTable key={i} service={service}/></Col>) : null}  
+          {services[0] ? services.map( (service,ind) => <Col xs="6"><AdminTable key={ind} service={service}/></Col>) : null}  
           </Row>
         </Container>
       </Fade>

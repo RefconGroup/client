@@ -30,12 +30,12 @@ export const addService = async (serviceInfo) => {
     }
 }
 
-// export const removeBlogPost = async (id) => {
-//     try {
-//         await api.delete(`/posts/${id}`)
-//     }
-//     catch(error) {
-//         console.log("Error deleting blog [post:", error)
-//         throw(error)
-//     }
-// }
+export const removeService = async (id) => {
+    try {
+        await api.delete(`/services/${id}`)
+    }
+    catch(error) {
+        console.log("Error deleting serivce [serivce:", error)
+        throw(error)
+    }
+}
