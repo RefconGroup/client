@@ -47,7 +47,7 @@ export const FooterTable = (props) => {
     <th scope="row">{service.name}</th>
             <td>{service.brief}</td>
             <td>
-                <Button  onClick={() => deleteService(service._id)}><p>DELETE</p></Button>
+                <Button  onClick={() => deleteService(service._id)} data-cy="deleteButton" ><p>DELETE</p></Button>
             </td>
           </tr>
         </tbody>

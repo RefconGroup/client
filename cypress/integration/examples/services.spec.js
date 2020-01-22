@@ -1,9 +1,8 @@
 let fixtures = {}
 beforeEach(() => {
 	cy.viewport(1024, 768)
-	cy.visit("/")
+	cy.visit("/admin")
 	// Start tests from home page
-	cy.contains("Home").click()
 	// cy.fixture("registeredUser.json").then(user => {
 	// 	cy.get("[data-cy=login]").click()
 	// 	cy.get("[name=username]").type(user.username)
@@ -29,22 +28,22 @@ function deleteService(service) {
 		}
 	})
 }
-describe("Add a post", () => {
+describe("Add a Service", () => {
 	it("should display add service", () => {
-		cy.get("[data-cy=addpost").click()
-		cy.get("[data-cy=addPostForm").should("be.visible")
+		cy.get("[data-cy=addService").click()
+		cy.get("[data-cy=addServiceForm").should("be.visible")
 	})
-	it("should add and delete a blog post", () => {
-		cy.get("[data-cy=addpost").click()
-		cy.get("[data-cy=addPostForm").click()
-		cy.get("[data-cy=title").type(fixtures.newPost.title)
-		cy.get("[data-cy=content").type(fixtures.newPost.content)
+	it("should add and delete a service", () => {
+		cy.get("[data-cy=addService").click()
+		cy.get("[data-cy=addServiceForm").click()
+		cy.get("[data-cy=title").type(fixtures.newService.title)
+		cy.get("[data-cy=content").type(fixtures.newService.content)
 		cy.get("[data-cy=addButton").click()
 		// Verify new post was added
 		cy.root().should("contain", fixtures.newPost.title)
 		// If the post exists, delete it
-		cy.get(`[data-cy=${fixtures.newPost.title}]`).then(newPost => {
-			newPost.click()
+		cy.get(`[data-cy=${fixtures.newService.title}]`).then(newService => {
+			newService.click()
 			cy.get("[data-cy=deleteButton").click()
 		})
 		// Verify post was deleted
