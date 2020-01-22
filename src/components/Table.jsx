@@ -47,10 +47,7 @@ export const FooterTable = (props) => {
     <th scope="row">{service.name}</th>
             <td>{service.brief}</td>
             <td>
-                <ButtonGroup>
-                <Button><p>EDIT</p></Button>
                 <Button  onClick={() => deleteService(service._id)}><p>DELETE</p></Button>
-                </ButtonGroup>
             </td>
           </tr>
         </tbody>
