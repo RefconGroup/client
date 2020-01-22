@@ -40,9 +40,8 @@ function App(){
     .catch((error) => {
       console.log(`Oops theres something wrong with this request. The error we got is : ${error}`)
     })
-    console.log(services)
     return () => {}
-  },[services])
+  },[])
 
 
 return(
