@@ -12,7 +12,7 @@ const AdminPage = props => {
             <Card>
                 <CardBody>
                     <h1>Welcome Admin!</h1>
-                    <Button>Create a new Service</Button>
+                    <Button href="/admin/new">Create a new Service</Button>
                 </CardBody>
             </Card>
         <h3 style={{paddingLeft: 15}}>Our Services</h3>
