@@ -10,12 +10,12 @@ const NewService = (props) => {
 		<Form onSubmit={(event) => addNewService(event,props)}>
 			<FormGroup>
 				<Label className="Label">Name</Label>
-				<Input type="text" className="Input" name="name" placeholder="Name of serivce" required></Input>
+				<Input type="text" className="Input" name="name" placeholder="Name of serivce" data-cy="title" required></Input>
 				<Label className="Label">Brief</Label>
-				<Input type="text" className="Input" name="brief" placeholder="Brief Summary of service"></Input>
+				<Input type="text" className="Input" name="brief" placeholder="Brief Summary of service" data-cy="content" ></Input>
 				<Label className="Label">Description</Label>
-				<Input className="Input" name="description" placeholder="Any information you wish to provide about the service" required></Input>
-					<Input type="submit" value="Create Service" className="button is-info"></Input>
+				<Input className="Input" name="description" placeholder="Any information you wish to provide about the service" data-cy="content" required></Input>
+					<Input type="submit" value="Create Service" className="button is-info" data-cy="addButton"></Input>
 					</FormGroup>
 			</Form>
 	)
