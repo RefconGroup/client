@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, Fragment} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import About from './About';
@@ -50,6 +50,7 @@ return(
     <RefconNav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Fragment>
           <div>
           <Route exact path="/services" render={() => <Services services={services}/>}  /> 
           <Route exact path="/admin/new" render={(props) => <NewService {...props} addNewService={addNewService} />} />
@@ -57,6 +58,7 @@ return(
           <Route exact path="/about" component={About} />
           <Route exact path="/admin" render={() => <Admin services={services}/>}  />
           </div>
+          </Fragment>
       </Switch>
       <Footer/>
   </BrowserRouter>
