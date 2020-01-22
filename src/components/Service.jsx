@@ -9,7 +9,7 @@ export const ServiceCard = ({service}) => {
         img="http://refcon.com.au/images/asc_logo.png" 
         cap="Card image cap" 
         title={service.name}
-        subtitle={service.description}
+        subtitle=""
         body={service.brief}
         button="GET A QUOTE TODAY!!!"
          />
