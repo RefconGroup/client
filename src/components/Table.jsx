@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Button, ButtonGroup} from 'reactstrap';
+import { Table, Button} from 'reactstrap';
 import {removeService} from '../services/serviceServices';
 
 

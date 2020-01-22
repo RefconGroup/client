@@ -4,7 +4,7 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
 
-  export function InfoCard({img, cap, title, subtitle, body, button})
+  export function InfoCard({img, cap, title, subtitle, body, button, link})
   {
     return (
     <div>
@@ -14,7 +14,7 @@ import {
           <CardTitle><h5>{title}</h5></CardTitle>
           <CardSubtitle>{subtitle}</CardSubtitle>
           <CardText>{body}</CardText>
-          <Button>{button}</Button>
+          <Button href={link}>{button}</Button>
         </CardBody>
       </Card>
     </div>
